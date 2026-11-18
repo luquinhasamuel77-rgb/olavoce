@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Uma carta escrita para Pietra.">
+  <title>Para Pietra.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='25' font-size='26'%3E💌%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="glow" id="glow" aria-hidden="true"></div>
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <main class="site-shell">
+    <header class="topbar">
+      <span class="topbar-mark">P.</span>
+      <span class="topbar-date">18 NOVEMBRO 2026</span>
+    </header>
+
+    <section class="intro" id="intro" aria-label="Uma carta para Pietra">
+      <div class="intro-copy">
+        <span class="eyebrow">UMA CARTA PARA</span>
+        <h1>Pietra<span>.</span></h1>
+        
+      </div>
+
+      <div class="envelope-scene">
+        <button class="envelope-button" id="openEnvelope" type="button"
+                aria-label="Abrir o envelope">
+          <span class="envelope-shadow"></span>
+
+          <span class="letter-preview" aria-hidden="true">
+            <span class="preview-date">18/11/26</span>
+            <span class="preview-line"></span>
+            <span class="preview-line short"></span>
+            <span class="preview-signature">Pietra,</span>
+          </span>
+
+          <span class="envelope">
+            <span class="envelope-back"></span>
+            <span class="envelope-flap"></span>
+            <span class="envelope-front"></span>
+            <span class="envelope-side"></span>
+            <span class="wax-seal"><span>p</span></span>
+          </span>
+        </button>
+        <span class="envelope-hint" id="envelopeHint">CLIQUE NO ENVELOPE PARA ABRIR ♪</span>
+      </div>
+
+      <span class="intro-footnote">ESCRITO COM CARINHO.</span>
+    </section>
+
+    <section class="letter-section" id="letterSection" aria-label="Carta para Pietra" hidden>
+      <article class="paper">
+        <div class="paper-topline">
+          <span>18 / 11 / 26</span>
+          <span>UMA CARTA PARA PIETRA</span>
+        </div>
+
+        <div class="paper-body">
+          <span class="paper-eyebrow">ANTES QUE ACABE</span>
+          <h2>Pietra,</h2>
+
+          <div class="letter-text">
+            <p>Pietra então eu meio que tinha me apaixonado por voce nesse ultimo mês da gente estudando junto eu n sei oque aconteceu sempre vi a gente como amigos mas foi só eu começar a conversa mais com voce e veio esse sentimento,</p>
+
+            <p>no fim doía por saber que nunca seria real mas eu gostava de pensar eu gostava de gostar de você eu me sentia bem, embora não demonstra-se por medo da negação mesmo sabendo oque viria não queria aceita a verdade, não queria aceitar que não era real mas era…</p>
+
+            <p>mas uma pequena parte de mim pensa q se eu tivesse começado a gostar de vc antes seria diferente ou oque eu queria me convencer a acreditar, mas pensando bem na verdade eu acho q no fundo eu era tudo q vc queria mas não era quem você queria.</p>
+
+            <p>E tambem eu não merecia tipo olha pra voce serio olha pra VOCE.   vc consegue ser bonita de dentro pra fora eu n consigo nem de dentro e nem de fora Kkkkkkk, essa mensagem fico meio assustadora mas eu tbm deixei pra escrever numa sexta-feira 13 Kkkkkkkkk, embora voce esta lendo isso no ultimo dia de aula ou de prova ou na vdd ate eu ganha coragem.</p>
+
+            <p>mas e vdd te conheço a 11 anos e fui gostar de vc justo no ultimo mês de aula, que azar em? embora não adiantaria mt coisa mas vc sabe né eu pelo menos iria conseguir te ver mais e admira voce e tudo isso só por ser VOCÊ,</p>
+
+            <p>eu devia ter tentando mais mas agora e tarde, agora eu não vou poder mas te julgar por ser but no free fire  não vou poder fazer mais gracinha pra te fazer rir nas aulas pq acabou pra sempre!</p>
+            
+            <p>Embora tento me convencer que nao mas tudo acaba uma hora, foram bons 11 anos com voce, mais saiba q eu gosto de ser seu amigo sempre gostei e agora entendo que eu sendo seu amigo eu ja tinha tudo. espero que nossa amizade nunca acabe e quero levar pra vida toda</p>
+          </div>
+
+          <div class="paper-ending">
+            <span>COM CARINHO,</span>
+            <p>seu amiguinho lucas</p>
+            <b class="heart" aria-hidden="true">♥</b>
+           
+          </div>
+        </div>
+
+        <footer class="paper-footer">
+          <span>18 — 11 — 26</span>
+          <span>FEITO PARA VOCÊ.</span>
+        </footer>
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      <span>UMA LEMBRANÇA EM FORMA DE CARTA.</span>
+    </footer>
+  </main>
+
+  <aside class="music-control" id="musicControl" aria-label="Controle da música">
+    <span class="vinyl" id="vinyl" aria-hidden="true"></span>
+    <button id="musicToggle" type="button" aria-label="Pausar música" title="Pausar música">
+      <span id="musicIcon">Ⅱ</span>
+    </button>
+    <div class="music-meta">
+      <span>PHOTOGRAPH</span>
+      <small>Ed Sheeran</small>
+    </div>
+    <span class="music-bars" id="musicBars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  </aside>
+
+
+  <audio id="backgroundMusic" src="photograph.mp3" preload="auto" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
